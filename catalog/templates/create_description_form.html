@@ -1,0 +1,13 @@
+<head>
+  <title>Create description</title>
+</head>
+<h1>Please fill out the form to create a description:</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+    {{ form }}
+    </table>
+    <br>
+    <input type="submit" value="Submit"/>
+</form>
+

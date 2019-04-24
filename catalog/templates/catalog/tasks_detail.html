@@ -1,0 +1,17 @@
+<head>
+  <title>Task</title>
+</head>
+{% block content %}
+  <h1>Task:</h1>
+  <p><strong>Purpose:</strong>{{ tasks.purpose }}</p>
+  <p><strong>Project:</strong>{{ tasks.project }}</p>
+  <p><strong>Status:</strong> {{ tasks.status }}</p>
+  <p><strong>Author:</strong> {{ tasks.author }}</p>
+  <p><strong>Worker:</strong> {{ tasks.worker}}</p>
+  <p><strong>Added at:</strong> {{ tasks.added_at}}</p>
+  <p><strong>Comment statistics:</strong>{% for stat in statistics %} <li> On {{ stat.date }} was added {{stat.descr_count}} comments by {{stat.authors_count}} authors. </li> {% endfor %}</p>
+  <p><strong>Descriptions:</strong>{% for descr in desc.values %} <li> {{ descr.description }}</li> {% endfor %}</p>
+  <input name="add_desc" type="button" value="Add description" onClick={{  url_add_desc }} />
+  <input name="update" type="button" value="Update task" onClick={{  url_update }} />
+  <input name="delete" type="button" value="Delete task" onClick={{  url_delete }} />
+{% endblock %}
