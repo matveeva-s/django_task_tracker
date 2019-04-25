@@ -7,34 +7,6 @@ from django.db.models import Count
 import random
 from datetime import date
 
-def fill_test_base(request):
-    for i in range(10):
-        firstname = 'name'+str(i+1)
-        lastname = 'fam'+str(i+1)
-        user=Users(id = i+1, first_name= firstname, last_name= lastname)
-        user.save()
-        print(user.id)
-    for i in range(5):
-        proj_name = 'project' + str(i+1)
-        author = Users.objects.get(id = random.randint(1,10))
-        project = Projects(name = proj_name, author = author)
-        project.save()
-        for j in range(10):
-            purpose = 'task' + str(j+1)
-            status = random.choice(['New', 'In progress', 'Ready', 'Completed', 'Canceled', 'Being tested'])
-            worker = Users.objects.get(id=random.randint(1, 10))
-            author = Users.objects.get(id=random.randint(1, 10))
-            added_at = date(2019, 4, random.choice([16,17,18,19]))
-            task = Tasks(purpose = purpose, project = project, status = status, author = author, worker = worker, added_at = added_at)
-            task.save()
-            for k in range(5):
-                descr = 'description' + str(k+1)
-                author = Users.objects.get(id=random.randint(1, 10))
-                added_at = date(2019, 4, random.choice([20, 21, 22]))
-                description = Description(description = descr, author = author, task = task, added_at= added_at)
-                description.save()
-    return render(request, 'task_added.html', {'text': 'Test base successfully created!'})
-
 def create_task(request):
     if request.method == 'GET':
         form = CreateNewTask()
