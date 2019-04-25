@@ -9,5 +9,4 @@ urlpatterns = [
     url(r'task/(?P<pk>\d+)/create_description/$', views.create_description),
     url(r'task/(?P<pk>\d+)/update/$', views.update_task),
     url(r'task/(?P<pk>\d+)/delete/$', views.delete_task),
-    url(r'^test_base/$', views.fill_test_base),
 ]
