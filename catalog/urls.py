@@ -2,7 +2,6 @@ from django.conf.urls import url
 from catalog import views
 
 urlpatterns = [
-<<<<<<< HEAD
     url(r'^$', views.tasks_list,
         name='root'),
     url(r'^create_task/', views.create_task,
@@ -34,12 +33,4 @@ urlpatterns = [
     url(r'^API/tasks/(?P<pk>\d+)/descriptions_statistic/$',
         views.DescriptionStatistics.as_view(),
         name='descriptions_statistic'),
-=======
-    url('^$', views.tasks_list),
-    url('^create_task/', views.create_task),
-    url(r'^task/(?P<pk>\d+)$', views.TaskDetailView.as_view(), name = 'task-detail'),
-    url(r'task/(?P<pk>\d+)/create_description/$', views.create_description),
-    url(r'task/(?P<pk>\d+)/update/$', views.update_task),
-    url(r'task/(?P<pk>\d+)/delete/$', views.delete_task),
->>>>>>> 6f8fe3e3c48cb7df81d56b22aea08c3df06c58ec
 ]

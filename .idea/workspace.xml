@@ -2,113 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c450f563-006b-4288-a3c8-add92a3c27ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/tasks_detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/catalog/tasks_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/catalog/tasks_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/tests/test_forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/tests/test_models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/tests/test_views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/tests/test_views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/pip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/pip3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/bin/pip3.7" beforeDir="false" afterPath="$PROJECT_DIR$/env/bin/pip3.7" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/MySQLdb/_mysql.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/MySQLdb/_mysql.cpython-37m-x86_64-linux-gnu.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/mysqlclient-1.4.2.post1-py3.7.egg-info/PKG-INFO" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/mysqlclient-1.4.2.post1-py3.7.egg-info/SOURCES.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/mysqlclient-1.4.2.post1-py3.7.egg-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/mysqlclient-1.4.2.post1-py3.7.egg-info/installed-files.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/mysqlclient-1.4.2.post1-py3.7.egg-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip-19.0.3.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip-19.0.3.dist-info/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip-19.0.3.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip-19.0.3.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip-19.0.3.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip-19.0.3.dist-info/entry_points.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip-19.0.3.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/build_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/build_env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/cache.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/cli/base_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/cli/base_command.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/cli/cmdoptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/cli/cmdoptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/cli/main_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/cli/main_parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/commands/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/commands/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/commands/configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/commands/configuration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/commands/install.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/commands/install.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/commands/list.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/commands/list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/commands/show.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/commands/show.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/configuration.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/configuration.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/download.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/download.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/index.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/locations.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/locations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/models/candidate.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/models/candidate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/models/format_control.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/models/format_control.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/models/link.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/models/link.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/operations/check.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/operations/check.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/operations/freeze.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/operations/freeze.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/operations/prepare.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/operations/prepare.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/pep425tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/pep425tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/pyproject.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/pyproject.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/req/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/req/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/req/constructors.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/req/constructors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/req/req_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/req/req_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/req/req_install.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/req/req_install.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/req/req_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/req/req_set.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/req/req_tracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/req/req_tracker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/req/req_uninstall.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/req/req_uninstall.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/resolve.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/resolve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/appdirs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/compat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/deprecation.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/deprecation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/encoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/encoding.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/glibc.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/glibc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/hashes.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/hashes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/logging.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/logging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/misc.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/misc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/outdated.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/outdated.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/packaging.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/packaging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/typing.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/typing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/utils/ui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/vcs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/vcs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/vcs/bazaar.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/vcs/bazaar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/vcs/git.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/vcs/git.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/vcs/mercurial.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/vcs/mercurial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/vcs/subversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/vcs/subversion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/wheel.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_internal/wheel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/certifi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/certifi/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/certifi/cacert.pem" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/certifi/cacert.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/certifi/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/certifi/core.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/distro.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/distro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/pkg_resources/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/pkg_resources/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/progress/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/progress/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/progress/bar.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/progress/bar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/progress/counter.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/progress/counter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/progress/helpers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/progress/spinner.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/progress/spinner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/pyparsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/pip/_vendor/pyparsing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools-41.0.0.dist-info/INSTALLER" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools-41.0.0.dist-info/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools-41.0.0.dist-info/METADATA" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools-41.0.0.dist-info/RECORD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools-41.0.0.dist-info/WHEEL" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools-41.0.0.dist-info/dependency_links.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools-41.0.0.dist-info/entry_points.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools-41.0.0.dist-info/top_level.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools-41.0.0.dist-info/zip-safe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools/build_meta.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools/build_meta.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools/command/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools/command/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools/package_index.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools/package_index.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools/py31compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/env/lib/python3.7/site-packages/setuptools/py31compat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_tt/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_tt/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,34 +16,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog/tests/test_views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="445">
+              <caret line="273" column="16" lean-forward="true" selection-start-line="273" selection-start-column="16" selection-end-line="273" selection-end-column="16" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="643">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -188,16 +59,16 @@
         <option value="$PROJECT_DIR$/my_tt/settings.py" />
         <option value="$PROJECT_DIR$/catalog/tests/insert_data.py" />
         <option value="$PROJECT_DIR$/catalog/models.py" />
-        <option value="$PROJECT_DIR$/catalog/urls.py" />
         <option value="$PROJECT_DIR$/catalog/serializers.py" />
-        <option value="$PROJECT_DIR$/catalog/views.py" />
         <option value="$PROJECT_DIR$/catalog/forms.py" />
         <option value="$PROJECT_DIR$/catalog/admin.py" />
         <option value="$PROJECT_DIR$/catalog/tests/test_views.py" />
+        <option value="$PROJECT_DIR$/catalog/urls.py" />
+        <option value="$PROJECT_DIR$/catalog/views.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="4">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="32" />
     <option name="width" value="1166" />
     <option name="height" value="967" />
@@ -359,10 +230,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="32" width="1166" height="967" extended-state="4" />
+    <frame x="0" y="32" width="1920" height="967" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30316344" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18234672" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -516,16 +387,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -538,20 +399,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="154" column="12" selection-start-line="154" selection-start-column="12" selection-end-line="154" selection-end-column="12" />
+        <state relative-caret-position="-1843">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -566,10 +417,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/tests/test_views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        <state relative-caret-position="445">
+          <caret line="273" column="16" lean-forward="true" selection-start-line="273" selection-start-column="16" selection-end-line="273" selection-end-column="16" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
