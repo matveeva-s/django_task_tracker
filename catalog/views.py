@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import generic
+<<<<<<< HEAD
 from django.shortcuts import get_object_or_404
 from django.http import HttpResponseNotAllowed
 from rest_framework import generics
@@ -74,6 +75,14 @@ class DescriptionStatistics(generics.ListAPIView):
 
 # RENDERING IN TEMPLATES
 
+=======
+from .models import Users, Tasks, Projects, Description
+from .forms import CreateNewTask, CreateNewDescription, UpdateTask, FilterTask
+from django.db.models import Count
+
+import random
+from datetime import date
+>>>>>>> 6f8fe3e3c48cb7df81d56b22aea08c3df06c58ec
 
 def create_task(request):
     if request.method == 'GET':
