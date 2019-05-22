@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'catalog.apps.CatalogConfig',	
+    'catalog.apps.CatalogConfig',
+    'rest_framework',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -79,9 +81,9 @@ WSGI_APPLICATION = 'my_tt.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tt_base',
+        'NAME': 'tt_db',
         'USER': 'django',
-        'PASSWORD':'12345',
+        'PASSWORD': '12345',
         'HOST': 'localhost',
     }
 }

@@ -1,9 +1,7 @@
 from django.contrib import admin
-from .models import Users, Tasks, Projects, Description
+from catalog.models import User, Task, Project, Description
 
-admin.site.register(Users)
-admin.site.register(Tasks)
-admin.site.register(Projects)
+admin.site.register(User)
+admin.site.register(Task)
+admin.site.register(Project)
 admin.site.register(Description)
-
-# Register your models here.

@@ -1,0 +1,26 @@
+<head>
+  <title>Task</title>
+</head>
+{% block content %}
+  <h1>Task:</h1>
+  <p><strong>Purpose:</strong>{{ task.purpose }}</p>
+  <p><strong>Project:</strong>{{ task.project }}</p>
+  <p><strong>Status:</strong> {{ task.status }}</p>
+  <p><strong>Author:</strong> {{ task.author }}</p>
+  <p><strong>Worker:</strong> {{ task.worker}}</p>
+  <p><strong>Added at:</strong> {{ task.added_at}}</p>
+  <p><strong>Comment statistics:</strong>{% for day, val in statistics.items %} <li> On {{ day }} was added {{val.0}} comments by {{val.1}} authors. </li> {% endfor %}</p>
+  <p><strong>Comments:</strong>{% for descr in all_descriptions.values %} <li> {{ descr.description }} </li> {% endfor %}</p>
+  <form action="{% url 'create_description' task.id %}" method="get">
+    <input type="submit" value="Create new description">
+  </form>
+  <form action="{% url 'update_task' task.id %}" method="get">
+    {% csrf_token %}
+    <input type="submit" value="Update this task">
+  </form>
+  <form action="{% url 'delete_task' task.id %}" method="post">
+    {% csrf_token %}
+    <input type="submit" value="Delete this task">
+  </form>
+{% endblock %}
+

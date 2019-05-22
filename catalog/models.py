@@ -2,7 +2,7 @@ from django.db import models
 from django.urls import reverse
 
 
-class Users(models.Model):
+class User(models.Model):
     id = models.AutoField(primary_key=True)
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
@@ -10,17 +10,23 @@ class Users(models.Model):
     def __str__(self):
         return '{} {}'.format(self.first_name, self.last_name)
 
+    def get_absolute_url(self):
+        return reverse('user-detail', args=[str(self.id)])
 
-class Projects(models.Model):
+
+class Project(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=30)
-    author = models.ForeignKey(Users, on_delete=models.PROTECT)
+    author = models.ForeignKey(User, on_delete=models.PROTECT)
 
     def __str__(self):
         return self.name
 
+    def get_absolute_url(self):
+        return reverse('project-detail', args=[str(self.id)])
 
-class Tasks(models.Model):
+
+class Task(models.Model):
     STATUS_CHOICES = (
         ('New', 'New'),
         ('In progress', 'In progress'),
@@ -31,10 +37,11 @@ class Tasks(models.Model):
     )
     id = models.AutoField(primary_key=True)
     purpose = models.TextField(max_length=150)
-    project = models.ForeignKey(Projects, on_delete=models.PROTECT)
+    project = models.ForeignKey(Project, on_delete=models.PROTECT)
     status = models.CharField(max_length=15, choices=STATUS_CHOICES)
-    author = models.ForeignKey(Users, on_delete=models.PROTECT)
-    worker = models.ForeignKey(Users, on_delete=models.PROTECT, related_name="workers")
+    author = models.ForeignKey(User, on_delete=models.PROTECT)
+    worker = models.ForeignKey(User, on_delete=models.PROTECT,
+                               related_name="workers")
     added_at = models.DateField(auto_now_add=True)
 
     def __str__(self):
@@ -47,9 +54,12 @@ class Tasks(models.Model):
 class Description(models.Model):
     id = models.AutoField(primary_key=True)
     description = models.TextField(max_length=500)
-    task= models.ForeignKey(Tasks, on_delete=models.CASCADE)
-    author = models.ForeignKey(Users, on_delete=models.PROTECT)
-    added_at = models.DateField(auto_now_add=True)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.PROTECT)
+    added_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.description
+
+    def get_absolute_url(self):
+        return reverse('description-detail', args=[str(self.id)])

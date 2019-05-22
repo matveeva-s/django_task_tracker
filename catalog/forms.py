@@ -1,10 +1,11 @@
 from django.forms import ModelForm, Form
 from django import forms
-from .models import Tasks, Description, Projects, Users
+from catalog.models import Task, Description, Project, User
 
-class CreateNewTask(ModelForm):
+
+class CreateNewTaskForm(ModelForm):
     class Meta:
-        model = Tasks
+        model = Task
         fields = ['purpose', 'project', 'status', 'author', 'worker']
         labels = {
             'purpose': 'Task purpose',
@@ -14,10 +15,11 @@ class CreateNewTask(ModelForm):
             'worker': 'Executor',
         }
 
-class FilterTask(Form):
-    project = forms.ModelChoiceField(Projects.objects.all(), required=False)
-    author = forms.ModelChoiceField(Users.objects.all(), required=False)
-    worker = forms.ModelChoiceField(Users.objects.all(), required=False)
+
+class FilterTaskForm(Form):
+    project = forms.ModelChoiceField(Project.objects.all(), required=False)
+    author = forms.ModelChoiceField(User.objects.all(), required=False)
+    worker = forms.ModelChoiceField(User.objects.all(), required=False)
     status = forms.ChoiceField(choices=(
         ('New', 'New'),
         ('In progress', 'In progress'),
@@ -25,12 +27,11 @@ class FilterTask(Form):
         ('Completed', 'Completed'),
         ('Canceled', 'Canceled'),
         ('Being tested', 'Being tested'),
-        (None, '------')),
-    required=False)
+        (None, '------')), required=False)
     search_text = forms.CharField(max_length=150, required=False)
 
 
-class CreateNewDescription(ModelForm):
+class CreateNewDescriptionForm(ModelForm):
     class Meta:
         model = Description
         fields = ['description', 'author']
@@ -39,13 +40,12 @@ class CreateNewDescription(ModelForm):
             'author': 'You are',
         }
 
-class UpdateTask(ModelForm):
+
+class UpdateTaskForm(ModelForm):
     class Meta:
-        model = Tasks
+        model = Task
         fields = ['status', 'worker']
         labels = {
             'status': 'Select new status',
             'worker': 'Select new executor',
         }
-
-
