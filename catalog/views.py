@@ -174,15 +174,18 @@ def tasks_filter(**kwargs):
     return tasks
 
 
+# This feature makes description statistics.
+# Returns the dictionary, where the key is the date,
+#   the value is a list with the numbers of various descriptions and authors.
 def statistics_dump(descriptions):
     statistic = {}
-    for descr in descriptions:
-        key = descr.added_at.date().strftime("%Y-%m-%d")
-        if key in statistic:
-            statistic[key][0] += 1
-            statistic[key][1].append(descr.author)
+    for description in descriptions:
+        date = description.added_at.date().strftime("%Y-%m-%d")
+        if date in statistic:
+            statistic[date]['diff_descriptions'] += 1
+            statistic[date]['diff_authors'].append(description.author)
         else:
-            statistic[key] = [1, [descr.author]]
-    for day in statistic:
-        statistic[day][1] = len(set(statistic[day][1]))
+            statistic[date] = {'diff_descriptions': 1, 'diff_authors': [description.author]}
+    for date in statistic:
+        statistic[date]['diff_authors'] = len(set(statistic[date]['diff_authors']))
     return statistic

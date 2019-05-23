@@ -3,7 +3,7 @@ from django.urls import reverse
 
 
 class User(models.Model):
-    id = models.AutoField(primary_key=True)
+    id = models.AutoField
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
 
@@ -15,9 +15,9 @@ class User(models.Model):
 
 
 class Project(models.Model):
-    id = models.AutoField(primary_key=True)
+    id = models.AutoField
     name = models.CharField(max_length=30)
-    author = models.ForeignKey(User, on_delete=models.PROTECT)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.name
@@ -35,14 +35,14 @@ class Task(models.Model):
         ('Canceled', 'Canceled'),
         ('Being tested', 'Being tested')
     )
-    id = models.AutoField(primary_key=True)
+    id = models.AutoField
     purpose = models.TextField(max_length=150)
-    project = models.ForeignKey(Project, on_delete=models.PROTECT)
+    project = models.ForeignKey(Project, on_delete=models.CASCADE)
     status = models.CharField(max_length=15, choices=STATUS_CHOICES)
-    author = models.ForeignKey(User, on_delete=models.PROTECT)
-    worker = models.ForeignKey(User, on_delete=models.PROTECT,
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    worker = models.ForeignKey(User, on_delete=models.CASCADE,
                                related_name="workers")
-    added_at = models.DateField(auto_now_add=True)
+    added_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.purpose
@@ -52,10 +52,10 @@ class Task(models.Model):
 
 
 class Description(models.Model):
-    id = models.AutoField(primary_key=True)
+    id = models.AutoField
     description = models.TextField(max_length=500)
     task = models.ForeignKey(Task, on_delete=models.CASCADE)
-    author = models.ForeignKey(User, on_delete=models.PROTECT)
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
     added_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

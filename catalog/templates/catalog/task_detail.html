@@ -9,7 +9,7 @@
   <p><strong>Author:</strong> {{ task.author }}</p>
   <p><strong>Worker:</strong> {{ task.worker}}</p>
   <p><strong>Added at:</strong> {{ task.added_at}}</p>
-  <p><strong>Comment statistics:</strong>{% for day, val in statistics.items %} <li> On {{ day }} was added {{val.0}} comments by {{val.1}} authors. </li> {% endfor %}</p>
+  <p><strong>Comment statistics:</strong>{% for day, val in statistics.items %} <li> On {{ day }} was added {{val.diff_descriptions}} comments by {{val.diff_authors}} authors. </li> {% endfor %}</p>
   <p><strong>Comments:</strong>{% for descr in all_descriptions.values %} <li> {{ descr.description }} </li> {% endfor %}</p>
   <form action="{% url 'create_description' task.id %}" method="get">
     <input type="submit" value="Create new description">
