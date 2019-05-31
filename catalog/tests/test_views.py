@@ -1,4 +1,3 @@
-import random
 import json
 from django.test import TestCase
 from django.urls import reverse
@@ -40,7 +39,7 @@ class TaskDetailViewTest(TestCase):
             self.assertContains(resp, 'Delete this task')
 
     def test_delete_detail_task(self):
-        id = random.randint(1, Task.objects.count())
+        id = 1
         resp = self.client.delete(reverse('task-detail', args=[str(id)]))
         self.assertEqual(resp.status_code, 405)
 
@@ -58,10 +57,10 @@ class CreateTaskViewTest(TestCase):
     def test_post_create_task(self):
         data = {
             "purpose": "some_test_purpose",
-            "project": random.randint(1, Project.objects.count()),
+            "project": 1,
             "status": "New",
-            "author": random.randint(1, User.objects.count()),
-            "worker": random.randint(1, User.objects.count()),
+            "author": 2,
+            "worker": 3,
         }
         resp = self.client.post(reverse('create_task'), data=data)
         self.assertEqual(resp.status_code, 302)
@@ -78,15 +77,15 @@ class CreateDescriptionViewTest(TestCase):
     fixtures = ['dumpdata.json']
 
     def test_get_create_descr_form(self):
-        task_id = random.randint(1, Task.objects.count())
+        task_id = 1
         resp = self.client.get(reverse('create_description', args=[task_id]))
         self.assertEqual(resp.status_code, 200)
         self.assertContains(resp, 'Please fill out the form')
         self.assertContains(resp, 'Submit')
 
     def test_post_create_descr(self):
-        task_id = random.randint(1, Task.objects.count())
-        author_id = random.randint(1, User.objects.count())
+        task_id = 1
+        author_id = 1
         resp = self.client.post(reverse('create_description', args=[task_id]),
                                 {
                                     'description': 'some_test_description',
@@ -99,7 +98,7 @@ class CreateDescriptionViewTest(TestCase):
         self.assertEqual(Description.objects.count(), 101)
 
     def test_try_delete(self):
-        task_id = random.randint(1, Task.objects.count())
+        task_id = 1
         resp = self.client.delete(reverse('create_description', args=[task_id]))
         self.assertEqual(resp.status_code, 405)
 
@@ -108,14 +107,14 @@ class DeleteTaskViewTest(TestCase):
     fixtures = ['dumpdata.json']
 
     def test_delete_task(self):
-        task_id = random.randint(1, Task.objects.count())
+        task_id = 1
         resp = self.client.delete(reverse('delete_task', args=[task_id]))
         self.assertEqual(resp.status_code, 302)
         deleted_obj = Task.objects.filter(id=task_id)
         self.assertEqual(len(deleted_obj), 0)
 
     def test_try_get(self):
-        task_id = random.randint(1, Task.objects.count())
+        task_id = 1
         resp = self.client.get(reverse('delete_task', args=[task_id]))
         self.assertEqual(resp.status_code, 405)
 
@@ -124,14 +123,14 @@ class UpdateTaskViewTest(TestCase):
     fixtures = ['dumpdata.json']
 
     def test_get_update_form(self):
-        task_id = random.randint(1, Task.objects.count())
+        task_id = 1
         resp = self.client.get(reverse('update_task', args=[task_id]))
         self.assertEqual(resp.status_code, 200)
         self.assertContains(resp, 'Please select new status or executor:')
 
     def test_post_update_task(self):
-        task_id = random.randint(1, Task.objects.count())
-        new_worker_id = random.randint(1, User.objects.count())
+        task_id = 1
+        new_worker_id = 1
         resp = self.client.post(reverse('update_task', args=[task_id]),
                                 {'status': 'Ready', 'worker': new_worker_id})
         self.assertEqual(resp.status_code, 302)
@@ -140,7 +139,7 @@ class UpdateTaskViewTest(TestCase):
         self.assertEqual(task.worker.id, new_worker_id)
 
     def test_try_put(self):
-        task_id = random.randint(1, Task.objects.count())
+        task_id = 1
         resp = self.client.put(reverse('update_task', args=[task_id]))
         self.assertEqual(resp.status_code, 405)
 
@@ -166,7 +165,7 @@ class API_UserDetailTest(TestCase):
     fixtures = ['dumpdata.json']
 
     def test_api_get_user_detail(self):
-        user_id = random.randint(1, User.objects.count())
+        user_id = 1
         resp = self.client.get(reverse('user-detail', args=[user_id]))
         user = User.objects.get(id=user_id)
         serializer = UserSerializer(user)
@@ -178,7 +177,7 @@ class API_ProjectDetailTest(TestCase):
     fixtures = ['dumpdata.json']
 
     def test_api_get_project_detail(self):
-        project_id = random.randint(1, Project.objects.count())
+        project_id = 1
         resp = self.client.get(reverse('project-detail', args=[project_id]))
         project = Project.objects.get(id=project_id)
         serializer = ProjectSerializer(project)
@@ -198,10 +197,10 @@ class API_TaskListTest(TestCase):
     def test_api_post_create_task(self):
         data = {
             "purpose": "TestPurpose",
-            "project": random.randint(1, Project.objects.count()),
+            "project": 1,
             "status": "Canceled",
-            "author": random.randint(1, User.objects.count()),
-            "worker": random.randint(1, User.objects.count()),
+            "author": 2,
+            "worker": 3,
         }
         resp = self.client.post(reverse('tasks-list'), data=data)
         self.assertEqual(resp.status_code, 201)
@@ -213,7 +212,7 @@ class API_TaskDetailTest(TestCase):
     fixtures = ['dumpdata.json']
 
     def test_api_get_detail_task(self):
-        task_id = random.randint(1, len(Task.objects.all()))
+        task_id = 1
         resp = self.client.get(reverse('api-task-detail', args=[task_id]))
         task = Task.objects.get(id=task_id)
         serializer = TaskSerializer(task)
@@ -221,7 +220,7 @@ class API_TaskDetailTest(TestCase):
         self.assertEqual(serializer.data, resp.data)
 
     def test_api_put_update_task(self):
-        task_id = random.randint(1, Task.objects.count())
+        task_id = 1
         data = {
             "status": "Canceled",
             "worker": 5
@@ -234,7 +233,7 @@ class API_TaskDetailTest(TestCase):
         self.assertEqual(serializer.data, resp.data)
 
     def test_api_delete_task(self):
-        task_id = random.randint(1, Task.objects.count())
+        task_id = 1
         resp = self.client.delete(reverse('api-task-detail', args=[task_id]))
         task = Task.objects.filter(id=task_id).all()
         self.assertEqual(resp.status_code, 204)
@@ -245,7 +244,7 @@ class API_DescriptionListTest(TestCase):
     fixtures = ['dumpdata.json']
 
     def test_api_get_descr_list(self):
-        task_id = random.randint(1, Task.objects.count())
+        task_id = 1
         resp = self.client.get(reverse('description-detail', args=[task_id]))
         serializer = DescriptionSerializer(Description.objects.filter(
                                             task_id=task_id).all(), many=True)
@@ -253,7 +252,7 @@ class API_DescriptionListTest(TestCase):
         self.assertEqual(serializer.data, resp.data)
 
     def test_api_post_create_descr(self):
-        task_id = random.randint(1, Task.objects.count())
+        task_id = 1
         data = {
             "description": "TestDescription",
             "task": task_id,
